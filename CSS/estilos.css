@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+background-color: #F1FAEE;
+width: 100%;
+}
+
+/*Landing Page*/
+
+header {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    background: #0B3954;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+}
+
+.container__menu{
+    max-width: 2000px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 35px;
+    margin-left: 50px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-left: 510px;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 110px;
+}
+
+.menu .icono{
+    margin-left: 35px;
+    max-width: 40px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.logo .vistaViajes{
+    width: 200px;
+    color:#fff;
+    position: absolute;
+    width: 156.03px;
+    height: 32.64px;
+    left: 90px;
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.15em;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 300ms;
+}
+
+.menu ul li a:hover{
+    text-shadow: 0px 0px 10px rgb(247, 245, 245);
+}
+
+.menu ul li{
+    transition: 300ms ease-in-out;
+}
+
+.menu ul li:hover{
+transform: scale(1.1);
+}
+
+#selected{
+    text-shadow: 0px 0px 10px rgb(247, 245, 245);
+}
+
+.container__cover{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    *position: absolute;
+    z-index: 1;
+    display: flex;
+}
+
+.container__cover .text{
+    max-width: 400px;
+}
+
+.container__cover .text h1{
+    position: absolute;
+    width: 590px;
+    height: 306px;
+    left: 73px;
+    top: 110px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 80px;
+    letter-spacing: 0.1em;
+    color: #0B3954;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container__cover .text p{
+    position: absolute;
+    width: 861px;
+    height: 61px;
+    left: 73px;
+    top: 370px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 61px;
+    letter-spacing: 0.1em;
+    color: #C81D25;
+    mix-blend-mode: darken;
+}
+
+.container__cover .text .boton-explorar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    left: 91px;
+    top: 480px;
+    background-color: #C81D25;
+    font-weight: 400;
+    font-size: 27px;
+    letter-spacing: 0.15em;
+    line-height: 37px;
+    mix-blend-mode: normal;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    transition: all 300ms;
+}
+
+.container__cover .text .boton-explorar a{
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container__cover .text .boton-explorar:hover{
+    box-shadow: 1px 1px 20px -10px #6d0000;
+    background-color: #E45C63;
+}
+
+.container__cover .svg img{
+    position: absolute;
+    width: 300px;
+    left: 900px;
+    top: 110px;
+    animation: move-image 3s linear infinite;
+}
+
+.container__cover .imagen-Vacaciones img{
+    border: none;
+    position: absolute;
+    width: 100%;
+    top: 43px;
+}
+
+@keyframes move-image {
+    0%{
+        transform: translateY(30px); 
+    } 50% {
+        transform: translateY(0px);
+    } 100% {
+        transform: translateY(30px);
+    }
+}
+
+/*Página Explorar*/
+
+footer{
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    height: 115px;
+    background: #0B3954;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container_footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo_footer{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.logo_footer img{
+    height: 80px;
+    margin-left: 100px;
+    top: 900px;
+}
+
+.texto_logo .vistaViajes_footer{
+    height: 70px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin-left: -10px;
+}
+
+.texto_logo .arroba{
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin-left: -10px;
+}
+
+.avion_azul{
+    position: absolute;
+    z-index: -1;
+    left: 15px;
+    width: 100px;
+}
+
+.container_footer img{
+    align-items: center;
+    display: flex;
+    width: 157px;
+}
+
+.CONTACTO{
+    margin-top: -50px;
+    width: 180px;
+    height: 27px;
+    font-size: 10px;
+    line-height: 30px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 15px;
+}
+
+.CONTACTO p{
+    width: 600px;
+    height: 25px;
+    font-size: 13px;
+}
+
+.linea{
+    width: 5px;
+    height: 80px;
+    background-color: #FFFFFF;
+    align-items: center;
+    margin-left: 40px;
+
+}
+
+.icono_social{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.icono_social .icono_footer{
+    width: 100%;
+    height: 30px;
+}
+
+.viajes-container{
+   margin-top: 13%;
+   padding: 40px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); 
+   grid-gap: 20px;
+}
+
+.card{
+    width: 310px;
+    height: 250px;
+    background-color: #C81D25;
+    border-radius: 10%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    padding: 10px;
+    color: #fff;
+}
+
+.card_header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card_header h1{
+    font-size: 20px;
+    text-align: center;
+
+}
